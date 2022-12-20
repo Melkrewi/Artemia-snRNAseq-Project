@@ -2,6 +2,7 @@
 
 
 ### Aligning raw reads to the A. fran genome and generating individual gtfs
+I used the adult tissue fastq files: 60541,60542,60543,60544,60545,60546,60547,60548
 ```
 module load samtools
 module load hisat2
