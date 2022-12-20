@@ -1,6 +1,5 @@
 # Preprocessing data with cellranger
 
-
 ### making reference and getting counts
 ```
 module load cellranger
