@@ -4,7 +4,6 @@
 ```
 module load cellranger
 
-
 cellranger mkref --genome=refgenome4cellranger2 --fasta=CHRR_integrated_fran.fa --genes=merged_fran_adult_2.gtf
 
 FASTQS="/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries/H32FGDSX5_2_R14367_20221027/demultiplexed/205916/"
