@@ -1,5 +1,5 @@
 # monocle3 pseudotime 
-
+```
 library(Seurat)
 library(ggplot2)
 library(cowplot)
@@ -30,9 +30,8 @@ plot_cells(cds, color_cells_by = "cluster", label_groups_by_cluster = F,
            label_branch_points = T, label_roots = T, label_leaves = F,
            group_label_size = 5)
 cds <- order_cells(cds, reduction_method = "UMAP", root_cells = colnames(cds[, clusters(cds) == 10]))
-plot_cells(cds, color_cells_by = "pseudotime", label_groups_by_cluster = T,
-           label_branch_points = T, label_roots = F, label_leaves = F)
 pdf("pseudotime_10_start.pdf")
 plot_cells(cds, color_cells_by = "pseudotime", label_groups_by_cluster = T,
            label_branch_points = T, label_roots = F, label_leaves = F)
 dev.off()
+```
