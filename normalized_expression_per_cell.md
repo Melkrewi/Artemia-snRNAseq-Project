@@ -1,0 +1,12 @@
+library(Seurat)
+library(ggplot2)
+library(cowplot)
+library(ggpubr)
+library(dplyr)
+library(RColorBrewer)
+library(corrplot)
+data.filt <- readRDS("data_filt_small.rds")
+devtools::install_github("AllenInstitute/scrattch.io")
+
+library(scrattch.io)
+write_dgCMatrix_csv(data.filt@assays$RNA@data, "normalized_expression.csv")
