@@ -29,3 +29,13 @@ git clone https://github.com/broadinstitute/CellBender.git
 
 pip install -e CellBender
 ```
+### scAR
+```
+module load anaconda3/2023.04
+source /mnt/nfs/clustersw/Debian/bullseye/anaconda3/2023.04/activate_anaconda3_2023.04.txt
+git clone https://github.com/Novartis/scar.git
+cd scar/
+conda env create -f scar-gpu.yml
+conda activate scar_gpu
+```
+
