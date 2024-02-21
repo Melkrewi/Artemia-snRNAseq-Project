@@ -1,0 +1,6 @@
+{
+    organism: "Artemia"
+    genome: ["afran_genome"]
+    input_fasta: ["/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/1.stringtie/asm_np_female_mkf02_01_09_2023_renamed_final_fin_wscaff.fa"]
+    input_gtf: ["/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/1.stringtie/afran_genome_annotation_0.5_2.gtf"]
+}
