@@ -1,0 +1,20 @@
+library(harmony)
+library(Seurat) 
+library(ggpubr) 
+library(dplyr)
+library(ggplot2) 
+library(cowplot) 
+library(RColorBrewer) 
+library(corrplot) 
+library(data.table)
+library(Signac)
+library(scCustomize)
+set.seed(1234)
+subset_3 <- readRDS("data_integrated_ATAC_DUBStepR.rds")
+fa <- Rsamtools::FaFile("/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/1.stringtie/asm_np_female_mkf02_01_09_2023_renamed_final_fin_wscaff.fa")
+subset_3 <- RegionStats(subset_3, genome = fa, assay='ATAC')
+subset_3 <- LinkPeaks(
+  object = subset_3,
+  peak.assay = "ATAC",
+  expression.assay = "RNA")
+saveRDS(subset_3, "data_integrated_ATAC_DUBStepR_with_peaks.rds")
