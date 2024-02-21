@@ -22,6 +22,7 @@ FASTQS="/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries/43.replicate_2/H
 cellranger count --transcriptome=refgenome4cellranger2/ --id=Afran_2 --fastqs=$FASTQS --sample=216143 --include-introns
 ```
 ### replicate_3 (10x multiome)
+Example of conflig file and libraries.csv is in the folder.
 ```
 /nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries/53.multiome/1.cellranger/cellranger-arc-2.0.2/cellranger-arc mkref --config=config_file.txt
 
