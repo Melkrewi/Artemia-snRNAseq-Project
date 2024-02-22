@@ -33,5 +33,5 @@ awk '$7 == "." { next } { print }' afran_genome_annotation_0.5.gtf > afran_genom
 ### to get a fasta file of transcripts
 ```
 module load cufflinks
-gffread -w afran_genome_annotation_transcripts_0.75.fa -g asm_np_female_mkf02_01_09_2023_renamed_final_fin_wscaff.fa afran_genome_annotation_0.75_2.gtf
+gffread -w afran_genome_annotation_transcripts_0.5.fa -g asm_np_female_mkf02_01_09_2023_renamed_final_fin_wscaff.fa afran_genome_annotation_0.5_2.gtf
 ```
