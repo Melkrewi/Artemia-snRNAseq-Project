@@ -1,1 +1,1 @@
-We used the [jupyter notebook]() to plot the expression of marker genes and the correlation matrix and dendrograms.
+We used the [jupyter notebook](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/Marker_plotting/Marker_plotting.ipynb) to plot the expression of marker genes and the correlation matrix and dendrograms.
