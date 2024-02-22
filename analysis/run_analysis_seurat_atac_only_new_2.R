@@ -10,7 +10,7 @@ library(data.table)
 library(Signac)
 library(scCustomize)
 set.seed(1234)
-data <- readRDS("data_integrated_harmony_DUBStepR_2.rds")
+data <- readRDS("data_integrated_harmony_DUBStepR_3_2.rds")
 pdf("atac_plots_harmony_10.pdf",width=14,height=6)
 subset_3 <- subset(x = data, subset = replicates == "replicate_4")
 inputdata.10x <- Read10X_h5("/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/5.replicate_4/Afran_ATAC2/outs/raw_feature_bc_matrix.h5")
@@ -84,7 +84,7 @@ subset_3 <- RunTFIDF(subset_3,method=3)
 subset_3 <- FindTopFeatures(subset_3, min.cutoff = 'q3')
 subset_3 <- RunSVD(subset_3,tol = 1e-12,n = 20)
 DepthCor(subset_3,n=NULL)
-subset_3 <- RunUMAP(subset_3, reduction = 'lsi', dims = c(2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20), reduction.name = "umap.atac", reduction.key = "atacUMAP_",min.dist = 0,spread = 7)
+subset_3 <- RunUMAP(subset_3, reduction = 'lsi', dims = c(2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20), reduction.name = "umap.atac", reduction.key = "atacUMAP_",min.dist = 0,spread = 4)
 p1 <- DimPlot(subset_3, reduction = "umap", label = TRUE, label.size = 2.5, repel = TRUE) + ggtitle("RNA")
 p2 <- DimPlot(subset_3 , reduction = "umap.atac", label = TRUE, label.size = 2.5, repel = FALSE) + ggtitle("ATAC")
 p1 +p2
@@ -146,7 +146,7 @@ integrated <- IntegrateEmbeddings(
   dims.to.integrate = 1:20
 )
 
-integrated <- RunUMAP(integrated, reduction = "integrated_lsi", dims = 2:20,min.dist = 0,spread = 7)
+integrated <- RunUMAP(integrated, reduction = "integrated_lsi", dims = 2:20,min.dist = 0,spread = 4)
 subset <- subset(x = data, subset = (replicates == "replicate_4")|(replicates == "replicate_3"))
 subset <- subset[, which((colnames(subset) %in% colnames(integrated))==TRUE)]
 subset[['ATAC']] <- integrated[['ATAC']]
@@ -164,4 +164,4 @@ p1 +p2
 pdf("atac_umap_final.pdf",width=10,height=5)
 p1+p2
 dev.off()
-saveRDS(subset, "data_integrated_ATAC_DUBStepR.rds")
+saveRDS(subset, "data_integrated_ATAC_DUBStepR_3_2.rds")
