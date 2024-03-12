@@ -35,3 +35,5 @@ awk '$7 == "." { next } { print }' afran_genome_annotation_0.5.gtf > afran_genom
 module load cufflinks
 gffread -w afran_genome_annotation_transcripts_0.5.fa -g asm_np_female_mkf02_01_09_2023_renamed_final_fin_wscaff.fa afran_genome_annotation_0.5_2.gtf
 ```
+### Reciprocal besthits between this annotation and the published annotation from Vincent Kiplangat Bett, Ariana Macon, Beatriz Vicoso, Marwan Elkrewi, Chromosome-Level Assembly of Artemia franciscana Sheds Light on Sex Chromosome Differentiation, Genome Biology and Evolution, Volume 16, Issue 1, January 2024, evae006, https://doi.org/10.1093/gbe/evae006
+This besthits are [here](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/annotation/Current_vs_annotation.txt) 
