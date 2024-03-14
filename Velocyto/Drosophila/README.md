@@ -1,5 +1,5 @@
 
-# Running velocyto for each replicate
+# Running velocyto for Drosophila
 ### Downloading the reads
 ```
 wget ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-10519/FCA62_Female_ovary_adult_5dWT_Nystul_All_Nuclei_S57_L004_R1_001.fastq.gz
