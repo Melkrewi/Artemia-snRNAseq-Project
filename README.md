@@ -1,7 +1,7 @@
 # Artemia Single Nucleus Project
 Below is a rough guide to the content of each folder:
 
-1. [Generating annotation for Cell ranger](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/annotation/README.md)
+1. [Generating annotation for Cell Ranger](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/annotation/README.md)
 2. [Running Cellranger](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/preprocessing/cellranger.md). The config files are in the same folder (preprocessing).
 3. [Removal of ambient RNA using cellbender](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/ambient_rna_removal/cellbender.md)
 4. [QC and preprocessing in R](https://github.com/Melkrewi/Artemia-snRNAseq-Project/tree/main/QC)
