@@ -1,4 +1,4 @@
-# Artemia-Single-Nucleus-Project
+# Artemia Single Nucleus Project
 Below is a rough guide to the content of each folder:
 
 1. [Generating annotation for Cell ranger](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/annotation/README.md)
