@@ -11,3 +11,4 @@ Below is a rough guide to the content of each folder:
 8. [Spliced and unspliced Drosophila](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/Velocyto/Drosophila/README.md). The jupyter notebook for plotting is included [here](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/Velocyto/Drosophila/drosophila.ipynb).
 9. [Networks Analysis](https://github.com/Melkrewi/Artemia-snRNAseq-Project/tree/main/Networks)
 10. [cellbrowser](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/cellbrowser.md)
+11. Jupyter notebooks used to make many of the figure are [here]
