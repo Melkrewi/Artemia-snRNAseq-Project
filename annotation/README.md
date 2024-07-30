@@ -2,7 +2,7 @@
 
 
 ### Aligning raw reads to the A. fran genome and generating individual gtfs
-I aligned the RNAseq fastq files of the adult tissue (males and females heads and gonads) to the genome:
+I aligned the RNAseq fastq files of the adult tissue (males and females heads and gonads from bioproject PRJNA524488) to the genome (ASM3617253v1, https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_036172535.1/):
 ```
 module load tophat
 module load cufflinks
