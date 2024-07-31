@@ -11,17 +11,16 @@ library(Signac)
 library(scCustomize)
 library(DUBStepR)
 set.seed(1234)
-data1 <- Read10X_h5("/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/2.replicate_1/cellbender/output_FPR_0.5_filtered.h5", use.names = TRUE)
+data1 <- Read10X_h5("~/2.replicate_1/cellbender/output_FPR_0.5_filtered.h5", use.names = TRUE)
 barcodes1 <- as.character(read.csv("../seurat_clusters_dataset_1_round2.txt", header = TRUE)$barcodes)
 data1 <- data1[, which((colnames(data1) %in% barcodes1)==TRUE)]
-data2 <- Read10X_h5("/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/3.replicate_2/cellbender/output_FPR_0.5_filtered.h5", use.names = TRUE)
+data2 <- Read10X_h5("~/3.replicate_2/cellbender/output_FPR_0.5_filtered.h5", use.names = TRUE)
 barcodes2 <- as.character(read.csv("../seurat_clusters_dataset_2_round2.txt", header = TRUE)$barcodes)
 data2 <- data2[, which((colnames(data2) %in% barcodes2)==TRUE)]
-data3 <- Read10X_h5("/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/4.replicate_3/cellbender/output_FPR_0.5_filtered.h5", use.names = TRUE)
+data3 <- Read10X_h5("~/4.replicate_3/cellbender/output_FPR_0.5_filtered.h5", use.names = TRUE)
 barcodes3 <- as.character(read.csv("../seurat_clusters_dataset_3_round2.txt", header = TRUE)$barcodes)
 data3 <- data3[, which((colnames(data3) %in% barcodes3)==TRUE)]
-#data4 <- Read10X_h5("/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/5.replicate_4/cellbender/output_FPR_0.4_filtered.h5", use.names = TRUE)
-data4 <- Read10X_h5("/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/5.replicate_4/cellbender/round2/round3/round4/output_FPR_0.25_filtered.h5", use.names = TRUE)
+data4 <- Read10X_h5("~/5.replicate_4/cellbender/round2/round3/round4/output_FPR_0.25_filtered.h5", use.names = TRUE)
 barcodes4 <- as.character(read.csv("seurat_clusters_dataset_4_round2.txt", header = TRUE)$barcodes)
 data4 <- data4[, which((colnames(data4) %in% barcodes4)==TRUE)]
 data <- CreateSeuratObject(counts = cbind(data1, data2, data3, data4), project = "Artemia", min.cells = 5) 
