@@ -1,3 +1,3 @@
 fastqs,sample,library_type
-/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries/63.new_multiome/H32YVDSX7_2_R15655_20230729/demultiplexed/233986/,233986,Gene Expression
-/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_final/5.replicate_4/HGTJJDSX7_1_R15655_20230901/demultiplexed/235296/,235296,Chromatin Accessibility
+~/H32YVDSX7_2_R15655_20230729/demultiplexed/233986/,233986,Gene Expression
+~/HGTJJDSX7_1_R15655_20230901/demultiplexed/235296/,235296,Chromatin Accessibility
