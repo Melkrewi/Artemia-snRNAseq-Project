@@ -28,13 +28,13 @@ data <- readRDS("../data_integrated_harmony_DUBStepR_3_2.rds")
 pdf("atac_plots_harmony_10.pdf",width=14,height=6)
 subset_3 <- subset(x = data, subset = replicates == "replicate_3")
 
-frag.file <- "/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/4.replicate_3/Afran_ATAC/outs/atac_fragments.tsv.gz"
+frag.file <- "~/4.replicate_3/Afran_ATAC/outs/atac_fragments.tsv.gz"
 
 fragcounts <- CountFragments(fragments = frag.file)
 
 atac.frags <- CreateFragmentObject(path = frag.file, cells = colnames(subset_3@assays$RNA))
 
-gtf <- rtracklayer::import('/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/4.replicate_3/afran_genome/genes/genes.gtf.gz')
+gtf <- rtracklayer::import('~/4.replicate_3/afran_genome/genes/genes.gtf.gz')
 gtf$gene_biotype <- 'protein_coding'
 gtf$gene_name <- gtf$gene_id
 gtf$tx_id <- gtf$transcript_id
@@ -60,12 +60,12 @@ subset_3 <- RunSVD(subset_3,tol = 1e-12,n=20)
 
 subset_4 <- subset(x = data, subset = replicates == "replicate_4")
 
-frag.file <- "/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/5.replicate_4/Afran_ATAC2/outs/atac_fragments.tsv.gz"
+frag.file <- "~/5.replicate_4/Afran_ATAC2/outs/atac_fragments.tsv.gz"
 
 fragcounts <- CountFragments(fragments = frag.file)
 
 atac.frags <- CreateFragmentObject(path = frag.file, cells = colnames(subset_4@assays$RNA))
-gtf <- rtracklayer::import('/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/5.replicate_4/afran_genome/genes/genes.gtf.gz')
+gtf <- rtracklayer::import('~/5.replicate_4/afran_genome/genes/genes.gtf.gz')
 gtf$gene_biotype <- 'protein_coding'
 gtf$gene_name <- gtf$gene_id
 gtf$tx_id <- gtf$transcript_id
