@@ -12,7 +12,7 @@ module load python/2.7
 module load samtools
 module load hisat2
 module load stringtie
-export TMPDIR=/nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/1.stringtie/
+export TMPDIR=~/1.stringtie/
 mkdir hisat2
 hisat2-build asm_np_female_mkf02_01_09_2023_renamed_final_fin_wscaff.fa genome_index
 for i in *_1.fastq
