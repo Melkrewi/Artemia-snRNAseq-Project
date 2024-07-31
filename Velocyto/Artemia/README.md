@@ -17,7 +17,7 @@ conda activate velocyto
 
 module load samtools
 
-velocyto run10x --samtools-threads 40 /nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/2.replicate_1/Afran_1/ genes_2.gtf
+velocyto run10x --samtools-threads 40 ~/2.replicate_1/Afran_1/ genes_2.gtf
 
 conda deactivate
 ```
@@ -36,7 +36,7 @@ conda activate velocyto
 
 module load samtools
 
-velocyto run10x --samtools-threads 40 /nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/3.replicate_2/Afran_2/ genes_2.gtf
+velocyto run10x --samtools-threads 40 ~/3.replicate_2/Afran_2/ genes_2.gtf
 
 conda deactivate
 
@@ -54,7 +54,7 @@ conda activate velocyto
 
 module load samtools
 
-velocyto run --samtools-threads 40 /nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/4.replicate_3/Afran_ATAC/outs/gex_possorted_bam.bam genes_2.gtf
+velocyto run --samtools-threads 40 ~/4.replicate_3/Afran_ATAC/outs/gex_possorted_bam.bam genes_2.gtf
 
 conda deactivate
 
@@ -72,7 +72,7 @@ conda activate velocyto
 
 module load samtools
 
-velocyto run --samtools-threads 40 /nfs/scistore18/vicosgrp/melkrewi/Project_snRNA_ovaries_with_W/5.replicate_4/Afran_ATAC2/outs/gex_possorted_bam.bam genes_2.gtf
+velocyto run --samtools-threads 40 ~/5.replicate_4/Afran_ATAC2/outs/gex_possorted_bam.bam genes_2.gtf
 
 conda deactivate
 ```
