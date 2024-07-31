@@ -1,6 +1,6 @@
 # Artemia Single Nucleus Project Code
 
-1. [Generating annotation for Cell Ranger](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/annotation/README.md)
+1. [Generating Genome annotation for Cell Ranger](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/annotation/README.md)
 2. [Running Cellranger](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/preprocessing/cellranger.md). The config files are in the same folder (preprocessing).
 3. [Removal of ambient RNA using cellbender](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/ambient_rna_removal/cellbender.md)
 4. [QC and preprocessing in R](https://github.com/Melkrewi/Artemia-snRNAseq-Project/tree/main/QC)
