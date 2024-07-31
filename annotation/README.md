@@ -24,7 +24,7 @@ do
     stringtie hisat2/${prefix}_accepted_hits.sorted.bam -o ${prefix}_transcripts.gtf
 done
 ```
-### merging gtf files and keeping transcripts with TPM above 1 and removing the couple unstranded ones:
+### merging gtf files and keeping transcripts with TPM above 0.5 and removing the couple unstranded ones:
 ```
 module load stringtie
 stringtie --merge 60541_transcripts.gtf 60542_transcripts.gtf 60543_transcripts.gtf 60544_transcripts.gtf 60545_transcripts.gtf 60546_transcripts.gtf 60547_transcripts.gtf 60548_transcripts.gtf -o afran_genome_annotation_0.5.gtf -F 0 -T 0.5
