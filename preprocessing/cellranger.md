@@ -1,6 +1,6 @@
 # Preprocessing data with cellranger
 
-### making reference and getting counts
+### Making reference and getting counts for each replicate:
 ### replicate_1 (10x RNAseq)
 ```
 module load cellranger/5.0.0
