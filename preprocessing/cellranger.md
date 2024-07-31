@@ -22,7 +22,7 @@ FASTQS="~/H335JDSX5_1_R14694_20230119/demultiplexed/216143/"
 cellranger count --transcriptome=refgenome4cellranger2/ --id=Afran_2 --fastqs=$FASTQS --sample=216143 --include-introns
 ```
 ### replicate_3 (10x multiome)
-Example of conflig file and libraries.csv is in the folder.
+Example of [conflig file](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/preprocessing/config_file.txt) and [libraries.csv](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/preprocessing/libraries.csv) is in the folder.
 ```
 ~/cellranger-arc-2.0.2/cellranger-arc mkref --config=config_file.txt
 
