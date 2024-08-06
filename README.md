@@ -1,5 +1,5 @@
 # Artemia Single Nucleus Project Code
-
+## The repository contains the code for the paper "Single-nucleus atlas of the Artemia female reproductive system suggests germline repression of the Z chromosome"
 1. [Generating genome annotation for Cell Ranger using RNAseq data](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/annotation/README.md)
 2. [Running Cellranger](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/preprocessing/cellranger.md). The config files for the two 10X multiome replicates are in the same folder [preprocessing](https://github.com/Melkrewi/Artemia-snRNAseq-Project/tree/main/preprocessing).
 3. [Removal of ambient RNA using cellbender](https://github.com/Melkrewi/Artemia-snRNAseq-Project/blob/main/ambient_rna_removal/cellbender.md)
